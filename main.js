@@ -92,3 +92,6 @@ let alumno=[
         apellidos:"daf"
     }
 ];
+
+let resultado=buscarAlumno(alumnos,alumno)
+console.log(resultado)
