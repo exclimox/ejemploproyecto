@@ -32,6 +32,7 @@ function sumaArray2(numeros) {
 let sumaValor2 = sumaArray2([2, 3, 4, 5]);
 console.log(sumaValor2)
 
+hola
 function sumaArray3(numeros) {
     let suma = 0;
     for (let i = 0; i < numeros.length; i++) {
