@@ -32,7 +32,7 @@ function sumaArray2(numeros) {
 let sumaValor2 = sumaArray2([2, 3, 4, 5]);
 console.log(sumaValor2)
 
-hola
+
 function sumaArray3(numeros) {
     let suma = 0;
     for (let i = 0; i < numeros.length; i++) {
@@ -43,3 +43,52 @@ function sumaArray3(numeros) {
 
 let sumaValor3 = sumaArray3([2, 3, 4, 5]);
 console.log(sumaValor3)
+
+/**
+ * @description buscarAlumno buscar un alumno en la lista alumno
+ * @param {Array} listaAlumnos lista de alumno   
+ * @param {Alumno} alumno alumno a buscar
+ * @return {Boolean}
+ */
+function buscarAlumno(listaAlumnos,alumno){
+    let encontrado=false;
+    for(let alum of listaAlumnos){
+        if(alum.nombre==alumno.nombre &&
+        alum.apellidos &&alumno.apellidos){
+            encontrado=true;
+    }
+    }
+    return encontrado;
+
+}
+
+
+
+let alumnos=[
+    {
+        nombre:"Pe",
+        apellidos:"Rb"
+    },
+    {
+        nombre:"Pe",
+        apellidos:"Rb"
+    },
+    {
+        nombre:"Pe",
+        apellidos:"Rb"
+    }
+];
+let alumno=[
+    {
+        nombre:"dasi",
+        apellidos:"daf"
+    },
+    {
+        nombre:"dasi",
+        apellidos:"daf"
+    },
+    {
+        nombre:"dasi",
+        apellidos:"daf"
+    }
+];
